@@ -1,0 +1,5 @@
+Serialize:
+Object => JSON
+
+Deserialize (Unpack):
+JSON => Object
