@@ -33,6 +33,11 @@ export class Model<T extends HasId> {
     return this.attributes.get;
   }
 
+  // Pass-through methods:
+  // Since ModelAttributes is initialized in constructor,
+  // you can do this:
+  // get = this.attributes.get
+
   set(update: T): void {
     this.attributes.set(update);
     this.events.trigger("change");

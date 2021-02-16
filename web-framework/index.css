@@ -1,0 +1,17 @@
+body {
+  /* width: 250px;
+  display: block; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button {
+  margin-top: 8px;
+}
+/* 
+#root button:not(:first-child) {
+  display: block;
+  width: 100%;
+  /* position: absolute;
+  margin: auto;
+} */
