@@ -22,6 +22,7 @@ interface AppProps {
 interface AppState {
   fetching: boolean;
   newTodo: string;
+  fetched: boolean;
 }
 
 class _App extends React.Component<AppProps, AppState> {
@@ -30,11 +31,12 @@ class _App extends React.Component<AppProps, AppState> {
     this.state = {
       fetching: false,
       newTodo: "",
+      fetched: false,
     };
   }
 
   componentDidUpdate(prevProps: AppProps): void {
-    if (!prevProps.todos.length && this.props.todos.length) {
+    if (prevProps.todos.length !== this.props.todos.length) {
       this.setState({
         fetching: false,
       });
@@ -43,13 +45,14 @@ class _App extends React.Component<AppProps, AppState> {
 
   onCreateClick = (): void => {
     this.props.createTodo(this.state.newTodo);
+    this.clearInput();
   };
 
   onKbCreateClick = (event: React.KeyboardEvent<HTMLInputElement>): void => {
     // event.preventDefault();
 
     if (event.key === "Enter") {
-      this.props.createTodo(this.state.newTodo);
+      this.onCreateClick();
     }
   };
 
@@ -66,6 +69,7 @@ class _App extends React.Component<AppProps, AppState> {
     this.props.fetchTodos();
     this.setState({
       fetching: true,
+      fetched: true,
     });
   };
 
@@ -82,12 +86,22 @@ class _App extends React.Component<AppProps, AppState> {
     }
   };
 
+  clearInput = (): void => {
+    this.setState({
+      newTodo: "",
+    });
+  };
+
+  handleFocus = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    event.target.select();
+  };
+
   renderList(): JSX.Element[] {
     if (!this.props.todos.length) {
       return [<NonIdealState icon={IconNames.INBOX} title="No todos" />];
     }
     return this.props.todos.map((todo: Todo) => (
-      <div key={todo.id}>
+      <div key={todo.id} className="pointer">
         <div onClick={() => this.onTodoClick(todo.id)}>
           {todo.completed
             ? String.fromCharCode(9745)
@@ -109,7 +123,10 @@ class _App extends React.Component<AppProps, AppState> {
           />
           Molly's To-do List
         </h2>
-        <button className="ui button" onClick={this.onFetchClick}>
+        <button
+          className={"ui button " + (this.state.fetched && "disabled")}
+          onClick={this.onFetchClick}
+        >
           Fetch
         </button>
         <br />
@@ -125,15 +142,19 @@ class _App extends React.Component<AppProps, AppState> {
         />
         */}
         {/* HTML elements are affected by Materialize CSS*/}
-        <div className="ui input" id="text-input">
+        <div className="ui action input" id="text-input">
           <input
             type="text"
             placeholder="Add new to-do..."
+            value={this.state.newTodo}
             onChange={this.handleTextChange}
             onKeyDown={this.onKbCreateClick}
+            onFocus={this.handleFocus}
           />
-          <span>&nbsp;</span>
-          <button className="ui positive button" onClick={this.onCreateClick}>
+          <button
+            className="ui icon positive button"
+            onClick={this.onCreateClick}
+          >
             <Icon icon={IconNames.SEND_MESSAGE} />
           </button>
         </div>

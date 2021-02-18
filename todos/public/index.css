@@ -5,3 +5,7 @@ body {
 #text-input {
   margin-bottom: 20px;
 }
+
+.pointer {
+  cursor: pointer;
+}
