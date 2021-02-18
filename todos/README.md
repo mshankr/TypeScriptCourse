@@ -2,6 +2,7 @@
 
 ## Technology
 
+- TypeScript
 - Create React App
 - BlueprintJS
 - Semantic UI
