@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/TypeScriptCourse/static/js/main.2a831273.chunk.js",
-    "main.js.map": "/TypeScriptCourse/static/js/main.2a831273.chunk.js.map",
+    "main.js": "/TypeScriptCourse/static/js/main.10f8c69e.chunk.js",
+    "main.js.map": "/TypeScriptCourse/static/js/main.10f8c69e.chunk.js.map",
     "runtime-main.js": "/TypeScriptCourse/static/js/runtime-main.8748dd82.js",
     "runtime-main.js.map": "/TypeScriptCourse/static/js/runtime-main.8748dd82.js.map",
     "static/css/2.4e5725ec.chunk.css": "/TypeScriptCourse/static/css/2.4e5725ec.chunk.css",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.8748dd82.js",
     "static/css/2.4e5725ec.chunk.css",
     "static/js/2.2a9b8cfe.chunk.js",
-    "static/js/main.2a831273.chunk.js"
+    "static/js/main.10f8c69e.chunk.js"
   ]
 }
