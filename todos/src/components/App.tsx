@@ -103,9 +103,11 @@ class _App extends React.Component<AppProps, AppState> {
     return this.props.todos.map((todo: Todo) => (
       <div key={todo.id} className="pointer">
         <div onClick={() => this.onTodoClick(todo.id)}>
-          {todo.completed
-            ? String.fromCharCode(9745)
-            : String.fromCharCode(9744)}
+          {todo.completed ? (
+            <i className="check square outline icon"></i>
+          ) : (
+            <i className="square outline icon"></i>
+          )}
           &nbsp;
           {todo.title}
         </div>
