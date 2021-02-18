@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/TypeScriptCourse/static/js/main.f8af0400.chunk.js",
-    "main.js.map": "/TypeScriptCourse/static/js/main.f8af0400.chunk.js.map",
+    "main.js": "/TypeScriptCourse/static/js/main.2a831273.chunk.js",
+    "main.js.map": "/TypeScriptCourse/static/js/main.2a831273.chunk.js.map",
     "runtime-main.js": "/TypeScriptCourse/static/js/runtime-main.8748dd82.js",
     "runtime-main.js.map": "/TypeScriptCourse/static/js/runtime-main.8748dd82.js.map",
     "static/css/2.4e5725ec.chunk.css": "/TypeScriptCourse/static/css/2.4e5725ec.chunk.css",
-    "static/js/2.ccf5657f.chunk.js": "/TypeScriptCourse/static/js/2.ccf5657f.chunk.js",
-    "static/js/2.ccf5657f.chunk.js.map": "/TypeScriptCourse/static/js/2.ccf5657f.chunk.js.map",
+    "static/js/2.2a9b8cfe.chunk.js": "/TypeScriptCourse/static/js/2.2a9b8cfe.chunk.js",
+    "static/js/2.2a9b8cfe.chunk.js.map": "/TypeScriptCourse/static/js/2.2a9b8cfe.chunk.js.map",
     "index.html": "/TypeScriptCourse/index.html",
     "static/css/2.4e5725ec.chunk.css.map": "/TypeScriptCourse/static/css/2.4e5725ec.chunk.css.map",
-    "static/js/2.ccf5657f.chunk.js.LICENSE.txt": "/TypeScriptCourse/static/js/2.ccf5657f.chunk.js.LICENSE.txt",
+    "static/js/2.2a9b8cfe.chunk.js.LICENSE.txt": "/TypeScriptCourse/static/js/2.2a9b8cfe.chunk.js.LICENSE.txt",
     "static/media/blueprint-icons.css": "/TypeScriptCourse/static/media/icons-20.cde033c5.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.8748dd82.js",
     "static/css/2.4e5725ec.chunk.css",
-    "static/js/2.ccf5657f.chunk.js",
-    "static/js/main.f8af0400.chunk.js"
+    "static/js/2.2a9b8cfe.chunk.js",
+    "static/js/main.2a831273.chunk.js"
   ]
 }
