@@ -44,8 +44,10 @@ class _App extends React.Component<AppProps, AppState> {
   }
 
   onCreateClick = (): void => {
-    this.props.createTodo(this.state.newTodo);
-    this.clearInput();
+    if (this.state.newTodo) {
+      this.props.createTodo(this.state.newTodo);
+      this.clearInput();
+    }
   };
 
   onKbCreateClick = (event: React.KeyboardEvent<HTMLInputElement>): void => {
