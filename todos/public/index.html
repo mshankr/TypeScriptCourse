@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,17 +12,15 @@
       content="Web site created using create-react-app"
     />
     <link rel="stylesheet" href="index.css" />
-    <link href="../node_modules/normalize.css/normalize.css" rel="stylesheet" />
-    <!-- blueprint-icons.css file must be included alongside blueprint.css! -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/semantic.min.css" />
+
     <link
-      href="../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css"
+      type="text/css"
       rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
     />
-    <link
-      href="../node_modules/@blueprintjs/core/lib/css/blueprint.css"
-      rel="stylesheet"
-    />
-    <!-- add other blueprint-*.css files here -->
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -51,5 +51,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
   </body>
 </html>
